@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Список тегів полінійно</h1>
+<ul>
+{% for item in a %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

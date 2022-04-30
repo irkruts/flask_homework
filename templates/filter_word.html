@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Пошукова база</h1>
+<div>Результати пошуку для {{ word }}</div>
+{% for elem_lst in a %}
+{% for elem_str in elem_lst.split() %}
+    {% if word == elem_str  %}
+<div>{{ elem_lst }}</div>
+{% endif %}
+    {% endfor %}
+    {% endfor %}
+{% endblock %}

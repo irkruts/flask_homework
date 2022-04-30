@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Частина тексту</h1>
+<div>Перші {{ number }} ліній файлу:</div>
+<div>
+    {% for ik in b%}
+    {{ ik }}
+    {% endfor %}
+</div>
+{% endblock %}
